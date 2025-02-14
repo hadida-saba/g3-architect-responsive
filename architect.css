@@ -4,6 +4,11 @@
 
 /* styles */
 
+main,
+footer{
+  width: 100%;
+}
+
 .work-sans-font {
     font-family: "Work Sans", serif;
     font-optical-sizing: auto;
@@ -24,7 +29,7 @@
   }
 
   .texts{
-    font-size: 1rem;
+    font-size: .7rem;
     font-weight: 400;
   }
 
@@ -59,7 +64,8 @@
 
   header{
     background-color: rgba(255, 144, 14, 0.1);
-    height: 1130px;
+    height: 66rem;
+    width: 100%;
   }
 
   header > div{
@@ -69,7 +75,9 @@
   }
 
   .banner-img{
-    margin-left: calc(50% - 605px);
+    margin-left: calc(50% - 720px);
+    width: 80%;
+    height: 57%;
   }
 
   .btn-primary{
@@ -80,6 +88,14 @@
     font-weight: bold;
     border-radius: 8px;
     margin-top: 20px;
+  }
+
+  /* main */
+  /*section 1 */
+
+  .pictures{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 
 
@@ -93,10 +109,27 @@
         margin: 1rem 0rem 1rem 0rem;
         font-size: 2.5rem;
     }
+
+    .banner-img {
+      margin-left: 0%;
+    }
+
+    header{
+      height: 50rem;
+    }
+
+    #brands {
+      padding-left: .7rem;
+      padding-right: .7rem;
+    }
+
+    .list-section{
+      flex-direction: row;
+    }
   }
 
 
-  @media  screen and (min-width:576.1px) and(max-width:992px) {
+  @media  screen and (min-width:576.1px) and (max-width:992px) {
 
     .list-title{
         margin-left: 8%;
@@ -105,4 +138,21 @@
     .list-section{
         margin-right: 8%;
     }
+
+    .banner-img{
+      margin-left: 0%;
+    }
+
+    header{
+      height: 52rem;
+    }
+  }
+
+
+  @media screen and (min-width:992.1px) {
+    
+    .banner-img {
+      margin-left: 0%;
+    }
+
   }
