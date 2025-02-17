@@ -6,7 +6,7 @@
 
 main,
 footer{
-  width: 100%;
+  width: 90%;
 }
 
 .work-sans-font {
@@ -36,6 +36,17 @@ footer{
   .Brand{
     font-size: 3rem;
   }
+
+  .btn-primary{
+    background-color: #FF900E;
+    height: 50px; width: 150px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+
 
   /* header section */
 
@@ -80,27 +91,28 @@ footer{
     height: 57%;
   }
 
-  .btn-primary{
-    background-color: #FF900E;
-    height: 50px; width: 150px;
-    border: none;
-    color: white;
-    font-weight: bold;
-    border-radius: 8px;
-    margin-top: 20px;
-  }
-
   /* main */
   /*section 1 */
 
-  .pictures{
+  .pictuers{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+   gap: 1rem;
+   grid-template-columns: repeat(2, 1fr);
+   margin: 4rem 2.5rem 4rem 11rem;
+   border-radius: 8px;
+  }
+
+  .alings{
+    margin-top: 15.5rem;
+    margin-left: 1rem;
+    width: 24rem;
+    height: 18rem;
   }
 
 
   @media screen and (max-width:576px){
-    .display-flex{
+    .display-flex,
+    .alings{
         flex-direction: column;
         align-items: center;
     }
@@ -123,8 +135,35 @@ footer{
       padding-right: .7rem;
     }
 
+    .list-item{
+      text-align: center;
+      padding-left: 2%;
+    }
+
     .list-section{
-      flex-direction: row;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .pictuers{
+      grid-template-columns: repeat(1, 1fr);
+     margin:1rem;
+    }
+    
+    .alings{
+      margin-top: 0px;
+      word-wrap: break-word;
+      width: calc(100% - 1rem);
+      align-self: center;
+    }
+
+    .btn{
+      margin-left: calc(50% - 6.5rem);
+    }
+
+    .sec01{
+      margin-left: calc(50% - 12rem);
     }
   }
 
